@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Películas</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/cinema.ico') }}">
+</head>
+<body class="peliculas">
+    <h1>Películas</h1>
+    <ul>
+        {% for pelicula in peliculas %}
+            <li>
+                <div class="image-container">
+                    <img src="https://image.tmdb.org/t/p/w500{{ pelicula.poster_path }}" alt="{{ pelicula.title }}">
+                </div>
+                <div>
+                    <strong>{{ pelicula.title }}</strong><br>
+                    {{ pelicula.release_date }}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

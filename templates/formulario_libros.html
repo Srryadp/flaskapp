@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Obtener Libros</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/book.icon') }}">
+</head>
+<body>
+    <h1>Obtener Libros</h1>
+    <form action="{{ url_for('obtener_libros') }}" method="post">
+        <button type="submit">Scrapear Libros</button>
+    </form>
+</body>
+</html>

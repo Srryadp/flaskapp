@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Libros</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/book.ico') }}">
+</head>
+<body class="libros">
+    <h1>Libros</h1>
+    <ul>
+        {% for libro in libros %}
+            <li>
+                <div class="image-container">
+                    <img src="{{ libro.image_url }}" alt="{{ libro.title }}">
+                </div>
+                <div>
+                    <strong>{{ libro.title }}</strong><br>
+                    <span class="price">{{ libro.price }}</span><br>
+                    {{ libro.availability }}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

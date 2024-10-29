@@ -1,0 +1,82 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Estilos para la página de libros */
+.libros ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.libros li {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.libros li .image-container {
+    width: 100px;
+    height: 150px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+
+.libros li .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.libros li div {
+    display: flex;
+    flex-direction: column;
+}
+
+.libros li .price {
+    margin-top: 10px;
+}
+
+
+/* Estilos para la página de películas */
+.peliculas ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.peliculas li {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.peliculas li .image-container {
+    width: 100px;
+    height: 150px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.peliculas li .image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.peliculas li div {
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Obtener Películas</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/cinema.ico') }}">
+</head>
+<body>
+    <h1>Obtener Películas</h1>
+    <form method="post" action="/obtener_peliculas">
+        <label for="page">Número de Página:</label>
+        <input type="number" id="page" name="page" min="1" value="1">
+        <button type="submit">Obtener Películas</button>
+    </form>
+</body>
+</html>
